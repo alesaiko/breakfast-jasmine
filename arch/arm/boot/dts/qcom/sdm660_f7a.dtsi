@@ -301,11 +301,6 @@
 	firmware: firmware {
 		android {
 			compatible = "android,firmware";
-				vbmeta {
-				compatible = "android,vbmeta";
-				parts = "vbmeta,boot,system,vendor,dtbo,recovery";
-			};
-
 			fstab {
 				compatible = "android,fstab";
 				vendor {
@@ -313,7 +308,7 @@
 					dev = "/dev/block/platform/soc/c0c4000.sdhci/by-name/vendor";
 					type = "ext4";
 					mnt_flags = "ro,barrier=1,discard";
-					fsmgr_flags = "wait,avb";
+					fsmgr_flags = "wait";
 					status = "ok";
 				};
 			};
