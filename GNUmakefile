@@ -3,7 +3,7 @@
 
 # Device configuration
 IMAGE			?= Image.gz-dtb
-DEFCONFIG		?= jasmine-perf_defconfig
+DEFCONFIG		?= jasmine_defconfig
 
 # Toolchain configuration
 TOOLCHAIN_HOST		:= https://github.com/alesaiko
