@@ -133,6 +133,11 @@ extern int d_set_mounted(struct dentry *dentry);
 extern long prune_dcache_sb(struct super_block *sb, struct shrink_control *sc);
 
 /*
+ * sync.c
+ */
+extern bool __read_mostly fsync_enabled;
+
+/*
  * read_write.c
  */
 extern int rw_verify_area(int, struct file *, const loff_t *, size_t);
